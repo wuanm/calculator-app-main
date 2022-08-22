@@ -1,0 +1,169 @@
+
+:root{
+  /*first theme*/
+  --cuerpoBacgroun:hsl(222, 26%, 31%);
+  --contenedor: hsl(223, 31%, 20%);
+  --screen:#181f32;
+  --headerBackgound:#3b4664;
+
+  --teclasEspeciales:hsl(225, 21%, 49%);
+  --teclaigual: hsl(6, 63%, 50%);
+
+  --leEspecialesPan:white;
+  --colorNumeroa:hsl(221, 14%, 31%);
+  --leltraScreen:white;
+  --fondoColorBoton:white;
+  --fondoColorRaton:white;
+ 
+ 
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'League Spartan', sans-serif;
+  height: auto;
+  min-height: 100vh;
+  height: 910px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--cuerpoBacgroun);
+  font-size: 63.5%;
+  
+}
+.contenedor{
+  width: 90%;
+  max-width: 545px;
+  height: 718px;
+  background-color:var(--contenedor);
+  border-radius: 10px;
+ 
+}
+.header{
+  height: auto;
+  height: 75px;
+  display: grid;
+  background-color:var(--headerBackgound);
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  grid-gap: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--leEspecialesPan);
+  
+ 
+}
+.header h1{
+  font-size: 2.2em;
+}
+.nav .num{
+  display: grid;
+  grid-template-columns: repeat(3,14px);
+  font-size: 1.8em;
+  justify-content:end;
+  margin-right: 10px;
+  color: var(--leEspecialesPan);
+}
+#cincos{
+  margin-left: 5px;
+}
+.form{
+  display: flex;
+  justify-content:end ;
+} 
+.form  h5{
+  font-size: 1.4em;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+.radio{
+  border: 1px solid black;
+  background-color: #252d44;
+  border-radius: 10px;
+  width: 60px;
+  padding-left: 5px;
+  cursor: pointer;
+
+}
+input{
+  cursor: pointer;
+ /* appearance: none;*/
+
+  
+}
+
+.main{
+  min-height: 128px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--screen);
+  font-size: 4.6em;
+ /* color:var(--leEspecialesPan);*/
+  color: var(--leltraScreen);
+}
+.espacio{
+  width: auto;
+  height: auto;
+  height: 25px;
+  background-color:var(--headerBackgound);
+}
+
+
+.cuerpo{
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(5,68px);
+  width: 90%;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px; 
+ 
+}
+
+.cuerpo >button{
+  border: 1px solid rgba(	0,0,0,.2);
+  justify-self:stretch;
+  align-self: stretch;
+  background-color: var(--fondoColorBoton);
+  border-radius: 10px;
+  box-shadow: -2px 5px 0px 0px var(--fondoColorBoton);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 20px; 
+  font-size: 2.2em;
+  color: var(--colorNumeroa);
+  cursor: pointer;
+}
+ button:hover{
+  background-color: var(--fondoColorRaton);
+}
+
+#del{
+  color:var(--leEspecialesPan);
+  background-color: var(--teclasEspeciales);
+  box-shadow: -2px 5px 0px 0px  var(--teclasEspeciales);
+}
+#reset{
+  grid-column:span 2 ;
+  background-color:  var(--teclasEspeciales);
+  box-shadow: -2px 5px 0px 0px   var(--teclasEspeciales);
+  color: var(--leEspecialesPan);
+}
+#igual{
+  grid-column: span 2;
+  background-color:var(--teclaigual);
+  box-shadow: -2px 5px 0px 0px var(--teclaigual);
+  color: var(--leEspecialesPan);
+  font-size: 5rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
